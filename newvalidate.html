@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>New Validate</title>
+    <script>
+        function validate(){
+            var username=document.getElementById("uname");
+
+            if(username.value==""){
+                alert("Please enter Username");
+                return false;
+            }
+            else{
+                return true;
+            }
+
+        }
+    </script>
+</head>
+<body>
+<form onsubmit="return validate()" action="newform.html">
+    <label for="uname">Username</label><br>
+    <input type="text"id="uname"><br><br>
+
+    <button type="submit">Send</button>
+</form>
+</body>
+</html>

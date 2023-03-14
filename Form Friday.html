@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form Friday</title>
+    <link rel="stylesheet" href="Form Friday.css">
+    <script type="text/javascript">
+        function validate(){
+            var ProjectName=document.getElementById("pn")
+            var Assignedto=document.getElementById("ass")
+            var StartDate=document.getElementById("std")
+            var EndDate=document.getElementById("ed")
+            var Priority=document.getElementById("pr")
+            var Description=document.getElementById("des")
+
+            if (ProjectName.value==""||Assignedto.value==""||StartDate.value==""||Enddate.value==""||Priority.value==""||Descripion.value==""){
+                alert("Please insert details")
+                return false;
+            }
+            else{
+                return true;
+            }
+
+
+        }
+    </script>
+</head>
+<body>
+<form onsubmit="return validate()" action="Validate 3.html">
+    <h1>Project Management</h1>
+    <br><br>
+
+    <label for="pn">Project Name</label>
+    <input type="text" placeholder="project name" id="pn"><br><br>
+
+    <label for="ass">Assigned to</label>
+    <select name="" placeholder="Er Merry Pebson" id="ass"></select><br><br>
+
+    <label for="std">Start Date</label>
+    <input type="date" placeholder="dd-mm-yyyy" id="std"><br><br>
+
+    <label for="ed">End Date</label>
+    <input type="date" placeholder="dd-mm-yyyy" id="ed"><br><br>
+
+    <label for="pr">Priority</label>
+    <input type="radio"High>High
+    <input type="radio"Average>Average
+    <input type="radio"Low>Low
+    <br><br>
+
+    <label for="des">Description</label>
+    <textarea name="" id="des" cols="30" rows="10"></textarea><br><br>
+
+    <button>SUBMIT</button>
+    <button>CLEAR</button>
+</form>
+</body>
+</html>

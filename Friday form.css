@@ -1,0 +1,16 @@
+fieldset{
+    height: 300px;
+    padding:50px;
+    margin-right: 400px;
+    margin-left: 400px;
+    width: 30%;
+}
+input[type=text],input[type=email]{
+    width: 80%;
+}
+select{
+    width: 78%;
+}
+input[type=checkbox]{
+    width: 5%;
+}

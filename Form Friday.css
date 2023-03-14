@@ -1,0 +1,19 @@
+form{
+    background-color: deepskyblue;
+    margin-left: 400px;
+    margin-right: 400px;
+    padding: 50px;
+}
+h1 {
+    text-align: center;
+    font-size: 24px;
+
+}
+input[type=text][type=date]{
+    width: 50%;
+    alignment: right;
+    height: 10px;
+}
+select{
+    width: 50%;
+}

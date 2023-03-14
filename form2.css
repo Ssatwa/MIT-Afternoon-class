@@ -1,0 +1,33 @@
+body{
+    background-color: maroon;
+    padding: 50px;
+    border-radius: 30px;
+}
+form{
+    margin-top: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+input[type=text],input[type=text],[type=number] {
+         width: 40%;
+         border: 1px solid black;
+         box-shadow: 4px 3px 5px 5px gray;
+         height: 30px;
+         border-radius: 10px;
+     }
+input[type=textarea]{
+    width: 60%;
+    border-radius: 10px;
+    height: 60px;
+     }
+input[type=Submit]{
+     width: 40%;
+     border-radius: 10px;
+     height: 40px;
+     background-color: green;
+}
+input[type=submit]:hover{
+    background-color: aliceblue;
+}
+
+

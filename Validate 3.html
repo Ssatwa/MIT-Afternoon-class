@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Validate 3</title>
+    <script type="text/javascript">
+        function validate(){
+            var Name=document.getElementById("name");
+            var Subject=document.getElementById("sbj");
+            var Phone=document.getElementById("phone");
+            var Email=document.getElementById("email");
+            var Message=document.getElementById("msg");
+
+            if (Name.value == "" || Subject.value == "" || Phone.value == "" || Email.value == "" || Message.value == ""){
+                alert("Please enter details");
+                return false;
+            }
+            else{
+                return true
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="Validate 3.css">
+</head>
+<body>
+    <form onsubmit="return validate()" action="newform.html">
+  <legend>CONTACT US</legend><br>
+
+  <input type="text" placeholder="Name" id="name"><br><br>
+  <input type="text" placeholder="Subject" id="sbj"><br><br>
+  <input type="text" placeholder="Phone" id="phone"><br><br>
+  <input type="email" placeholder="Email" id="email"><br><br>
+  <textarea name="Message" id="msg" placeholder="Message" cols="30" rows="20"></textarea><br><br>
+
+  <button type="submit">SUBMIT</button>
+        <br><br>
+
+
+
+
+</form>
+</body>
+</html>

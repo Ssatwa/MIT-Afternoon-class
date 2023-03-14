@@ -1,0 +1,43 @@
+body{
+    background-color: yellow;
+    background-size: cover;
+
+}
+form {
+    color: #100b0b;
+    height: 500px;
+    background-color: white;
+    padding:50px;
+    margin-right: 400px;
+    margin-left: 400px;
+    width: 30%;
+    border-radius: 20px;
+
+
+
+}
+input[type=text],input[type=email]{
+    width: 100%;
+    height: 50px;
+    border-radius: 20px;
+
+}
+textarea{
+    width: 100%;
+    height: 70px;
+    border-radius: 20px;
+}
+
+button[type=submit]{
+    background-color: yellow;
+    border-radius: 20px;
+    width: 100%;
+    height: 50px;
+
+
+}
+legend {
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Murang'a Emergency Services</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Murang'a Emergency Services</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Jumbotron -->
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Murang'a Emergency Services</h1>
+      <p class="lead">Connecting school head teachers with ambulances, hospitals, fire stations and health centers in Murang'a County, Kenya</p>
+    </div>
+  </div>
+
+  <!-- Services section -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#schoolModal">Request Assistance for Your School</button>
+  <br><br>
+  <section id="services" class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Ambulances</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis aliquet bibendum. Ut vel ex eu nisl congue elementum vel sed velit.</p>
+              <a href="#" class="btn btn-primary">Contact Us</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Hospitals</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis aliquet bibendum. Ut vel ex eu nisl congue elementum vel sed velit.</p>
+              <a href="#" class="btn btn-primary">Contact Us</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">FireStations</h5>
+<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis aliquet bibendum. Ut vel ex eu nisl congue elementum vel sed velit.</p>
+<a href="#" class="btn btn-primary">Contact Us</a>
+</div>
+</div>
+</div>
+<div class="col-lg-3">
+<div class="card">
+<div class="card-body">
+<h5 class="card-title">Health Centers</h5>
+<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis aliquet bibendum. Ut vel ex eu nisl congue elementum vel sed velit.</p>
+<a href="#" class="btn btn-primary">Contact Us</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+  </section>
+  <!-- Contact section -->
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Contact Us</h2>
+          <p class="lead">If you have any questions or concerns, please fill out the form below and we will get back to you as soon as possible.</p>
+          <form>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input type="email" class="form-control" id="email">
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea class="form-control" id="message" rows="5"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+
+<!-- School Request Modal -->
+<div class="modal fade" id="schoolModal" tabindex="-1" role="dialog" aria-labelledby="schoolModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="schoolModalLabel">Request Assistance for Your School</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="school-name">School Name</label>
+            <input type="text" class="form-control" id="school-name">
+          </div>
+          <div class="form-group">
+            <label for="emergency-type">Emergency Type</label>
+            <select class="form-control" id="emergency-type">
+              <option value="medical">Medical</option>
+              <option value="fire">Fire</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="description">Description of Emergency</label>
+            <textarea class="form-control" id="description" rows="3"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" onclick="sendSchoolRequest()">Submit Request</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="py-4 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">© 2023 Murang'a Emergency Services</p>
+    </div>
+  </footer>
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.3/dist/umd/popperjs.min.js" integrity="sha384-87FZXEmt2rk1tovcRYjuN9xtm41uJ7yLmFwA62QVBybDRZ48APRLZkw23xMtv5m5" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+legend{
+    font-size: 20px;
+    text-align: center;
+    font-style: oblique;
+    text-decoration: underline;
+}
+form{
+    text-align: center;
+    margin-right: 400px;
+    margin-left: 400px;
+    background-color: darkorange;
+    height: 300px;
+    width: 250px;
+    alignment: center;
+    padding: 80px;
+}
